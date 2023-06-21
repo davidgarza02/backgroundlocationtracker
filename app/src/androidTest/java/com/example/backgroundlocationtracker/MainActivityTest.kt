@@ -32,9 +32,9 @@ class MainActivityTest {
     @Test
     fun onTapHello_ToastIsShown() {
         onView(withId(R.id.id_text_view)).perform(clickClickableSpan("Hello"))
-        onView(withText("Hello Toast!"))
+        onView(withText("Click on Hello!"))
             .inRoot(withDecorView(not(decorView)))
-            .check(matches(isDisplayed()));
+            .check(matches(isDisplayed()))
     }
 }
 

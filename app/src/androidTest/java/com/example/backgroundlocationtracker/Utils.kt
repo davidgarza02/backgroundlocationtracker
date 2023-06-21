@@ -19,7 +19,7 @@ fun clickClickableSpan(textToClick: CharSequence): ViewAction {
         }
 
         override fun getDescription(): String {
-            return "click on a ClickableSpan";
+            return "click on a ClickableSpan"
         }
 
         override fun perform(uiController: UiController, view: View) {
@@ -30,7 +30,7 @@ fun clickClickableSpan(textToClick: CharSequence): ViewAction {
                 throw NoMatchingViewException.Builder()
                     .includeViewHierarchy(true)
                     .withRootView(textView)
-                    .build();
+                    .build()
             }
 
             val spans =
@@ -44,7 +44,7 @@ fun clickClickableSpan(textToClick: CharSequence): ViewAction {
                     val sequence = spannableString.subSequence(start, end)
                     if (textToClick.toString().equals(sequence.toString())) {
                         span.onClick(textView)
-                        return;
+                        return
                     }
                 }
             }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BackgroundLocationTracker</string>
+    <string name="permission_exception">"Permission exception: WorkManager won't be able to start"</string>
+    <string name="location_toast">"Location: (%1$s,  %2$s)"</string>
 </resources>
